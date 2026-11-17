@@ -3,6 +3,6 @@
 @media(max-width:650px){.announcement{font-size:9px}.site-header{height:76px}.brand{right:4%}.brand img{width:82px;height:54px}.main-nav{display:none}.mobile-menu{display:block}.text-button{font-size:10px}.header-actions{gap:10px}.cart-button{padding:8px 11px}.hero{grid-template-columns:1fr;padding:42px 7% 30px}.hero h1{font-size:43px}.hero-art{min-height:330px;margin-top:20px}.hero-image{height:320px;width:85%}.trust-strip{padding:22px 7%;grid-template-columns:1fr;gap:18px}.trust-strip div{grid-template-columns:30px 1fr}.section{padding:55px 6%}.section-heading{display:block}.section-heading>p{margin-top:12px}.section h2,.story h2{font-size:34px}.filter-row{align-items:flex-start;flex-direction:column}.product-grid{gap:20px 12px}.product-photo{height:235px}.product-info h3{font-size:15px}.story{grid-template-columns:1fr;gap:28px}.story-image{height:300px}.footer{grid-template-columns:1fr 1fr;padding:38px 7% 20px}.footer-brand{grid-column:1/-1}.form-grid{grid-template-columns:1fr}.span-2{grid-column:auto}.modal{padding:32px 22px}.admin-panel{padding:22px 15px}.stats{grid-template-columns:1fr 1fr}.admin-form{grid-template-columns:1fr 1fr}.admin-form .wide{grid-column:span 2}.admin-table{min-width:650px}.admin-section{overflow:auto;padding:14px}.admin-tabs{overflow:auto}.admin-tab{padding:11px 12px;white-space:nowrap}}
 
 /* Slightly larger branding for improved visibility. */
-.brand img{width:122px;height:74px}
-.footer-brand img{width:137px;height:89px}
-@media(max-width:650px){.brand img{width:86px;height:57px}}
+.brand img{width:140px;height:85px}
+.footer-brand img{width:158px;height:102px}
+@media(max-width:650px){.brand img{width:99px;height:66px}}
