@@ -6,3 +6,11 @@
 .brand img{width:140px;height:85px}
 .footer-brand img{width:158px;height:102px}
 @media(max-width:650px){.brand img{width:99px;height:66px}}
+
+/* Animate the original logo without changing its artwork. */
+@keyframes logo-video-motion{
+  0%,100%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-4px) scale(1.025)}
+}
+.brand img{animation:logo-video-motion 3.2s ease-in-out infinite;transform-origin:center}
+@media(prefers-reduced-motion:reduce){.brand img{animation:none}}
