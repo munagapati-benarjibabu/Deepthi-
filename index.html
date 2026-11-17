@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5b1020" />
+  <meta name="description" content="Discover beautiful handloom sarees at Bhanu Deepthi Handlooms." />
+  <title>Bhanu Deepthi Handlooms | Timeless Sarees</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Timeless craftsmanship • Beautifully woven traditions</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Bhanu Deepthi Handlooms home">
+      <img src="assets/bhanu-deepthi-logo.png" alt="Bhanu Deepthi Handlooms logo">
+    </a>
+    <nav class="main-nav">
+      <a href="#home">Home</a><a href="#collection">Shop sarees</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" id="adminOpen">Business admin</button>
+      <button class="cart-button" id="cartOpen" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="storeView">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">BHANU DEEPTHI HANDLOOMS</p>
+        <h1>Woven with heritage.<br><em>Made to be treasured.</em></h1>
+        <p class="hero-desc">Celebrate the art of Indian handloom with sarees that bring together skilled craftsmanship, rich textures and timeless elegance.</p>
+        <a class="primary-button" href="#collection">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="gold-line"></span> Thoughtfully selected traditional weaves</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-stamp">HANDWOVEN<br><b>WITH LOVE</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✦</span><b>Handloom inspired</b><small>Craft rooted in tradition</small></div>
+      <div><span>❋</span><b>Curated collections</b><small>For every celebration</small></div>
+      <div><span>♡</span><b>Personal service</b><small>Here to help you choose</small></div>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your forever saree</h2></div>
+        <p>From everyday grace to celebration-ready statement pieces.</p>
+      </div>
+      <div class="filter-row">
+        <div class="filters" id="categoryFilters">
+          <button class="filter active" data-category="All">All sarees</button>
+          <button class="filter" data-category="Silk">Silk</button>
+          <button class="filter" data-category="Cotton">Cotton</button>
+          <button class="filter" data-category="Festive">Festive</button>
+        </div>
+        <label class="search-box">⌕ <input id="productSearch" type="search" placeholder="Search sarees..." /></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-image"></div>
+      <div class="story-copy"><p class="eyebrow">OUR PROMISE</p><h2>Every weave tells<br><em>a beautiful story.</em></h2>
+        <p>At Bhanu Deepthi Handlooms, we celebrate the artistry, patience and heritage behind every saree. Our aim is to help you find a piece that feels special—today and for years to come.</p>
+        <a class="under-link" href="#collection">Discover the collection <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><img src="assets/bhanu-deepthi-logo.png" alt=""><p>Tradition woven into every thread.</p></div>
+    <div><b>Explore</b><a href="#collection">Shop sarees</a><a href="#story">Our story</a></div>
+    <div><b>Contact</b><a href="mailto:hello@bhanudeepthi.com">hello@bhanudeepthi.com</a><span>Update this email with your business contact.</span></div>
+    <div class="copyright">© <span id="year"></span> Bhanu Deepthi Handlooms. All rights reserved.</div>
+  </footer>
+
+  <div class="overlay" id="cartOverlay">
+    <aside class="drawer">
+      <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping bag</h2></div><button class="close" data-close="cartOverlay">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-bottom"><div class="total-line"><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><p class="tiny">Shipping and final details can be confirmed when you place your order.</p><button class="primary-button full" id="checkoutOpen">Continue to checkout</button></div>
+    </aside>
+  </div>
+
+  <div class="overlay" id="checkoutOverlay">
+    <section class="modal checkout-modal">
+      <button class="close modal-close" data-close="checkoutOverlay">×</button>
+      <p class="eyebrow">ALMOST YOURS</p><h2>Checkout details</h2>
+      <p class="muted">This starter store records demo orders in this browser. Connect a payment provider and backend before accepting real payments.</p>
+      <form id="checkoutForm" class="form-grid">
+        <label>Full name<input required name="name" autocomplete="name" placeholder="Your name"></label>
+        <label>Phone number<input required name="phone" inputmode="tel" autocomplete="tel" placeholder="+91"></label>
+        <label class="span-2">Email address<input type="email" name="email" autocomplete="email" placeholder="you@example.com"></label>
+        <label class="span-2">Delivery address<textarea required name="address" rows="3" placeholder="House number, street, city, PIN code"></textarea></label>
+        <div class="span-2 checkout-total"><span>Order total</span><b id="checkoutTotal">₹0</b></div>
+        <button class="primary-button full span-2" type="submit">Place demo order</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="overlay" id="adminOverlay">
+    <section class="admin-panel">
+      <div class="admin-top"><div><p class="eyebrow">BHANU DEEPTHI • MANAGEMENT</p><h2>Business dashboard</h2></div><button class="close" data-close="adminOverlay">×</button></div>
+      <div class="admin-tabs"><button class="admin-tab active" data-tab="overview">Overview</button><button class="admin-tab" data-tab="products">Products & stock</button><button class="admin-tab" data-tab="orders">Orders</button></div>
+      <div id="adminContent"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
